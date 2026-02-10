@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Logo Creation Flowchart</title>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background:#f4f2ff;
+        display:flex;
+        justify-content:center;
+        padding:40px;
+    }
+
+    .flow{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:22px;
+    }
+
+    /* boxes */
+    .box, .start, .end{
+        padding:14px 24px;
+        background:linear-gradient(135deg,#a78bfa,#7c3aed);
+        color:white;
+        border-radius:12px;
+        box-shadow:0 10px 20px rgba(124,58,237,0.18);
+        text-align:center;
+        font-size:14px;
+    }
+
+    .start, .end{
+        border-radius:40px;
+        font-weight:bold;
+        letter-spacing:1px;
+    }
+
+    /* diamond */
+    .decision{
+        width:200px;
+        height:200px;
+        background:linear-gradient(135deg,#7b5cff,#00d4c7);
+        color:white;
+        transform:rotate(45deg);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        box-shadow:0 12px 25px rgba(0,0,0,0.12);
+    }
+
+    .decision span{
+        transform:rotate(-45deg);
+        width:150px;
+        text-align:center;
+        font-weight:bold;
+    }
+
+    .arrow{
+        font-size:20px;
+        color:#7c3aed;
+    }
+
+    .row{
+        display:flex;
+        align-items:flex-start;
+        gap:60px;
+        margin-top:10px;
+    }
+
+    .column{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:18px;
+    }
+
+    .yes, .no{
+        font-size:12px;
+        font-weight:bold;
+        color:#6d28d9;
+        letter-spacing:1px;
+    }
+
+    .credit{
+        margin-top:30px;
+        font-size:12px;
+        color:#7c3aed;
+        opacity:0.8;
+    }
+
+</style>
+</head>
+
+<body>
+<div class="flow">
+
+    <div class="start">START</div>
+    <div class="arrow">↓</div>
+
+    <div class="box">Receive client brief</div>
+    <div class="arrow">↓</div>
+
+    <div class="box">Research brand & references</div>
+    <div class="arrow">↓</div>
+
+    <div class="box">Define concept</div>
+    <div class="arrow">↓</div>
+
+    <div class="box">Create sketches</div>
+    <div class="arrow">↓</div>
+
+    <div class="decision">
+        <span>Does the client approve?</span>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="no">NO</div>
+            <div class="arrow">↓</div>
+            <div class="box">Adjust according to feedback</div>
+            <div class="arrow">↺</div>
+        </div>
+
+        <div class="column">
+            <div class="yes">YES</div>
+            <div class="arrow">↓</div>
+            <div class="box">Vectorize the logo</div>
+            <div class="arrow">↓</div>
+            <div class="box">Prepare final files</div>
+            <div class="arrow">↓</div>
+            <div class="end">END</div>
+        </div>
+    </div>
+
+    <div class="credit">Created by Stephanie Eusse</div>
+
+</div>
+</body>
+</html>
